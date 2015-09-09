@@ -1,0 +1,11 @@
+{
+  "name": "malt",
+  "version": "0.0.1",
+  "description": "minimum alternative to Alt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fand",
+  "license": "MIT"
+}
