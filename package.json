@@ -4,8 +4,15 @@
   "description": "minimum alternative to Alt",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "$(npm bin)/browserify src/index.js -o index.js -t babelify",
+    "watch": "$(npm bin)/watchify src/index.js -o index.js -t babelify"
   },
   "author": "fand",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.0.1",
+    "watchify": "^3.4.0"
+  }
 }
