@@ -3,8 +3,12 @@
 import { EventEmitter } from 'events';
 
 class Store extends EventEmitter {
-  constructor () {
 
+  /**
+   * @param {Dispatcher} dispatcher
+   */
+  constructor (dispatcher) {
+    this.dispatcher = dispatcher;
   }
 
   /**
@@ -13,7 +17,7 @@ class Store extends EventEmitter {
    * @param {function} storeHandler
    */
   bindAction (actionName, storeHandler) {
-    // yadda
+    this.dispatcher.on(actionName, storeHandler);
   }
 
   /**
@@ -36,6 +40,7 @@ class Store extends EventEmitter {
   getState () {
     throw new Error('Please override Store#getState');
   }
+
 }
 
 export default Store;
