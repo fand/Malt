@@ -8,6 +8,7 @@ class Store extends EventEmitter {
    * @param {Dispatcher} dispatcher
    */
   constructor (dispatcher) {
+    super();
     this.dispatcher = dispatcher;
   }
 
