@@ -26,7 +26,7 @@ class Store extends EventEmitter {
    * @param {Function} listener
    */
   listen (listener) {
-    this.on('change', listener);
+    this.on('alter', listener);
   }
 
   /**
@@ -34,12 +34,21 @@ class Store extends EventEmitter {
    * @param {Function} listener
    */
   unlisten (listener) {
-    this.removeListener('change', listener);
+    this.removeListener('alter', listener);
   }
 
   /** @abstract */
   getState () {
     throw new Error('Please override Store#getState');
+  }
+
+  /**
+   * Emit changes to listeners
+   * DO NOT OVERRIDE THIS!
+   * @final
+   */
+  alter () {
+    this.emit('alter');
   }
 
 }
