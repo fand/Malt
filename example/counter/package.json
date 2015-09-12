@@ -1,0 +1,21 @@
+{
+  "name": "counter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "$(npm bin)/browserify src/index.js -o index.js -t [ babelify --stage 0 ]",
+    "watch": "$(npm bin)/watchify src/index.js -o index.js -t [ babelify --stage 0 ]"
+  },
+  "author": "fand",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.1.0",
+    "watchify": "^3.4.0"
+  }
+}
