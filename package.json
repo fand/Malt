@@ -1,5 +1,5 @@
 {
-  "name": "malt",
+  "name": "@fand/malt",
   "version": "0.0.1",
   "description": "minimum alternative to Alt",
   "main": "index.js",
