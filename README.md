@@ -1,6 +1,10 @@
-# malt
+# Malt 
 
-A minimized (bit opinionated) alternative to [Alt](http://alt.js.org/).
+:beer: :beers: :beer: :beers: :beer: :beers: :beer: :beers: :beer: :beers: 
+
+A mini Flux lib, inspired by [Alt](http://alt.js.org/).
+
+:beer: :beers: :beer: :beers: :beer: :beers: :beer: :beers: :beer: :beers: 
 
 ## Features
 
